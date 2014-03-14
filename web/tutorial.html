@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Media Gallery - Android App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="../css/media-gallery.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+    <!-- s1 navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand" href="index.html">Media Gallery</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tutorial_album_view.html">Album View</a>
+                            </li>
+                            <li><a href="tutorial_media_view.html">Media View</a>
+                            </li>
+                            <li><a href="tutorial_photo_view.html">Photo View</a>
+                            </li>
+                            <li><a href="tutorial_lock_view.html">Media Lock</a>
+                            </li>
+                            <li><a href="tutorial_setting.html">Setting</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+        	
+
+            
+            <div class="col-md-9 col-sm-8">
+        	
+        	    <div class="col-lg-12" id="top">
+	                <h1 class="page-header">Tutorial <small>For Media Gallery</small></h1>
+	                <ol class="breadcrumb">
+	                    <li><a href="../index.html">Home</a></li>
+	                    <li class="active">Tutorial</li>
+	                </ol>
+	            </div>
+	            
+			    <!-- s1 mediagallery -->
+			    <div class="section" id="mediagallery">
+	
+	                <h2>Media Gallery, why have we?</h2>
+	                <hr>
+	                <p>Many pictures have been stored in your [Camera] folder so it is difficult to find it later. 
+	                	It is classified by place, time, face detectiotn, but you may not up ot expectiation. 
+	                	Tags exists but you could not tag. You want to organize by folde, but you wander here 
+	                	and there from a menu to other menu.Eventually your sprite’s been confued</p>
+	                <p>A smartphone is smart about view and search,  but isn’t about management.</p>
+		            <div class="row bs-callout bs-callout-warning">
+					    <h4>Innovation of Photo Gallery </h4>
+				        <p>Media Gallery is revolutionary in this regard Gallery app. Media Gallerys make you 
+				        	to systematically manage your photos without switching of screen and choice of menu. 
+				        	Select the photos and choice the album. So, Your photo will be organized. </p>
+					</div>
+		        	<p>In a lite version, some features are limited. </p>
+		        	
+				</div>
+					
+					
+			    <!-- s1 Configuration -->
+                <div  class="section row " id="configuration">
+                    <h2>Configuration of Media Gallery</h2>
+                    <hr>
+                    
+                    <p>Media Gallery consists of  <a href="#albumview">Album View</a>, <a href="#galleryview">Gallery View</a>, 
+                    	<a href="#photoviewer">Photo Viewer</a>, <a href="#audioview"></a>Video Viewer</a>, 
+                    	<a href="#audioviewr">Audio Player</a>. 
+	                    Gallery view has the album panel and you can navigate between albums free and copy / move your 
+	                    media intuitively</p>
+                    <p>A smartphone is smart about view and search,  but isn’t about management.</p>
+                    <br/>
+                    
+					<div class="well">
+				        <p>For providing lock function, it is worry. The purpose of the gallery is to show, but Lock is to hide. 
+				        They conflict cross-functionally. But if it is privied by other App, convenience of it is bad. 
+				        Further, since it is a matter of how to manage, we decided to include a lock function. </p>
+					</div>
+					
+                </div>					
+					
+			    <!-- s1 Album View -->
+			    <div class="section row "  id="albumview">
+					<div class="row">
+		                <div class="col-lg-9 col-md-9 col-sm-9">
+		                    <h2>Album view</h2>
+		                    <hr>
+		                    <p>Album View is the view for managing your album and foler.</p>
+		                    <p>If you fling left and right, you can move between the categories. Click an album and 
+		                    	it will go to the gallery.  And album menu will appear if long-press.</p>
+		                </div>
+		               	<div class="col-lg-3 col-md-3 col-sm-3">
+		                    <img class="img-responsive" src="../img/album_view_framed.png">
+		                </div>
+	                </div>
+	                <div class="col-lg-12 ">
+	                    <h4><span class="label label-info">Option menu</span></h4>
+	                    <ul>
+	                        <li>new album
+	                        	<p>new album (folder) will be added. If it exist, 
+	                        		you have been  added to the list. If not,  added after created</p>
+	                        </li>
+	                        <li>Views Type 
+	                        	<p>Format of Screen is changed by Simple, Detail, List type. 
+	                        		It is applied to all categories</p>
+	                        </li>
+	                        <li>Sort  
+	                        	<p>album list is sorted by name, date or path. It is applied to all categories</p>
+	                        </li>
+	                        <li>Refresh 
+	                        	<p>All album list is regenerated.</p>
+	                        </li>
+	                        <li><a href="#preferences">Setting</a>
+	                        	<p>You can set a theme, menu type, the lock type etc.</p>
+	                        </li>
+	                        <li>Finish 
+	                        	<p>This application will be exited.</p>
+	                        </li>
+	                    </ul>                       
+	                    <h4><span class="label label-success">Album menu</span></h4>
+	                    <ul>
+	                        <li>Rename
+	                        	<p>change the name of your album. It will also  change the album name 
+	                        		in a different category because it change the folder name</p>
+	                        </li>
+	                        <li>Delete album 
+	                        	<p>deletes the album. It delete media in the current categories. 
+	                        		And if the  folder is empty, the folder will also be deleted</p>
+	                        </li>
+	                    </ul>                       
+	                    <div class="well">
+	                    	<b>remove Ad</b>
+	                    	<p >You can downgrade.  the media to lock is limited to 50. 
+	                    		This feature will be gone emoved in the future, but you can use it</p>
+	                	</div>
+	                </div>
+
+	    		</div>
+	
+
+			    <!-- s1 Gallery View -->
+			    <div class="section"  id="galleryview">
+					<div class="row">
+		                <div class="col-lg-9 col-md-9 col-sm-9">
+		                    <h2>Gallery view</h2>
+		                    <hr>
+		                    <p>Gallery View is the view for retreaving and managing your media. </p>
+		                    <p>slide to the right and album panel will appear. You can select the category and album,  
+		                    	and go to it freely. If you long press a media,  the multi-media selection mode become.</p>
+		                    <p>In a drawer toggle mode, slide the left end of the screen, or touch the toggle in top, 
+		                    	album panel opens.</p>
+		                </div>
+		                <div class="col-lg-3 col-md-3 col-sm-3">
+		                    <img class="img-responsive" src="../img/album_view_framed.png">
+		                </div>
+	                </div>
+	                <div class="col-lg-12">
+	                    <ul clase="list-group">
+	                    	<li >multi-select 
+	                        	<p>swich selected mode by long press one of medias. 
+	                        		You can add your selection by clicking the different media</p>
+	                        </li>
+	                    	<li ><a href="#pastemedia">Copy/ Move</a> 
+	                        	<p>In the selected mode, tap a album in the panel and you can move or copy the selected </p>
+	                        </li>
+	                    </ul>
+	                    
+	                    <h4><span class="label label-info">Option menu</span></h4>
+	                    <ul >
+	                        <li>Play
+	                        	<p>play the viewer for the media</p>
+	                        </li>
+	                        <li>Views Type 
+	                        	<p>The format of the display is changed in the form of simple, 
+	                        		detail and preview type</p>
+	                        </li>
+	                        <li>merge  
+	                        	<p>You can bind your media by group</p>
+	                        </li>
+	                        <li>sort  
+	                        	<p>a list of the albums is sorted by name, date or path. In all the category it is applied overal.</p>
+	                        </li>
+	                        <li><a href="#preferences">Setting</a>
+	                        	<p>You can set a theme, menu type, the lock type etc.</p>
+	                        </li>
+	                        <li>Finish 
+	                        	<p>This application will be exited.</p>
+	                        </li>
+	                    </ul>  
+	                                         
+	                    <h4><span class="label label-success">Selected menu</span></h4>
+	                    <ul>
+	                        <li>share 
+	                        	<p>You can share your medias with SNS or other applications</p>
+	                        </li>
+	                        <li>rotate 
+	                        	<p>rotate the selected media clockwise</p>
+	                        </li>
+	                        <li>Delete  
+	                        	<p>the selected media will be deleted</p>
+	                        </li>
+	                        <li>select All 
+	                        	<p>selects all of the media department of the album</p>
+	                        </li>
+	                        <li><a href="#lockview">lock</a>
+	                        	<p>The media is locked</p>
+	                        </li>
+	                    </ul>                       
+	                </div>
+	            </div>
+
+	
+			    <!-- s1 Paset media -->
+			    <div class="section"  id="pastemedia">
+	
+	                <div class="col-lg-12">
+	                    <h3>Paste media</h3>
+	                    <hr>
+	                    <p></p>
+	                </div>
+	                <div class="col-lg-12">
+	                	<h4><span class="label  label-info">Process</span></h4>
+	                    <ol >
+	                    	<li>long press one of medias
+	                        </li>
+	                    	<li>Add your selection by clicking the different media
+	                        </li>
+	                        <li>slide your screen to the right and the panel will open 
+			                </li>
+	                        <li>tap the album to paste
+			                </li>
+	                        <li>choose  move or copy in dialog
+			                </li>
+	                    </ol>
+	                </div>
+	                <div class="col-lg-12">
+		                <div class="col-lg-3 col-md-3 col-sm-3">
+		                    <img class="img-responsive" src="../img/paste_album_framed.png">
+		                </div>
+		                <div class="col-lg-3 col-md-3 col-sm-3">
+		                    <img class="img-responsive" src="../img/paste_open_panel_framed.png">
+		                </div>
+		                <div class="col-lg-3 col-md-3 col-sm-3">
+		                    <img class="img-responsive" src="../img/paste_tap_album_framed.png">
+		                </div>
+		                <div class="col-lg-3 col-md-3 col-sm-3">
+		                    <img class="img-responsive" src="../img/paste_tap_move_framed.png">
+		                </div>
+	                </div>
+	                <div class="col-lg-12 col-md-12 col-sm-12">
+		                <div class="row bs-callout bs-callout-warning">
+		                	<h4 ><span class="label  label-warning">Tip</span></h4>
+		                    <ul >
+		                    	<li>Until completed, please do not exit the application
+		                        </li>
+		                    	<li>takes a long time to copy a video file
+		                        </li>
+		                        <li>Please do not copy files at once too many. 
+		                        	The mobile device may may be interrupted  
+		                        	due to the insufficient power supply or lack of memory 
+				                </li>
+		                    </ul>
+		                </div>
+	                </div>
+	            </div>
+				
+			    <!-- s1 lock media -->
+			    <div class="section"  id="lockmedia">
+	
+	                <div class="col-lg-12">
+	                    <h3>lock media</h3>
+	                    <hr>
+	                    <p></p>
+	                </div>
+	                <div class="col-lg-3 col-md-3 col-sm-3">
+	                    <img class="img-responsive" src="../img/album_view_framed.png">
+	                </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                	<h4><span class="label  label-info">Process</span></h4>
+	                    <ul class="list-unstyled">
+	                    	<li>using the panel
+			                    <ol >
+			                    	<li>select media
+			                        </li>
+			                    	<li>open the panel by sliding to right
+			                        </li>
+			                    	<li>select the lock category. if password window shows, input your password
+			                        </li>
+			                        <li>tap the album for locking 
+					                </li>
+			                    </ol>
+	                        </li>
+	                        <li>using menu 
+			                    <ol>
+			                    	<li>select media
+			                        </li>
+			                        <li>in more menu, select the lock menu and lock album dialog will show
+			                        </li>
+			                    	<li>select the new album, in-same-name, or one of existed albums
+			                        </li>
+			                    </ol>
+			                </li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-12">
+	                	<h4><span class="label  label-warning">Tip</span></h4>
+	                    <ul >
+	                    	<li>Until completed, please do not exit the application
+	                        </li>
+	                    	<li>Untill Lock / Unlock is completed, please do not exit the application 
+	                        </li>
+	                        <li>Please do not copy files at once too many. 
+	                        	The mobile device may may be interrupted  
+	                        	due to the insufficient power supply or lack of memory 
+			                </li>
+	                    </ul>
+	                </div>
+	                
+	                <div class="col-lg-12">
+	                	<h4><span class="label  label-warning"></span></h4>
+	                    <ul >
+	                    	<li>you can change your password in settings
+	                        </li>
+	                    	<li>backupand restore: If you can backup preferece info and locked media. 
+	                    		To restore it in your other device,  transite it directly by removalbe 
+	                    		SD card or other way.  and preform to restore.
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>					
+
+			
+			    <!-- s1 Rename media -->
+			    <div class="section"  id="renamemedia">
+	
+	                <div class="col-lg-12">
+	                    <h3>Rename media</h3>
+	                    <hr>
+	                    <p>There are ditect-renaming and format-renaming. if multi-selected, 
+	                    	only format-renaming are possible. If necessary, you can reuse 
+	                    	by registering the format of their own</p>
+	                </div>
+	                <div class="col-lg-3 col-md-3 col-sm-3">
+	                    <img class="img-responsive" src="../img/album_view_framed.png">
+	                </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                	<h4><span class="label  label-info">Process</span></h4>
+	                    <ul >
+	                    	<li>select rename menu in the selected mode
+	                        </li>
+	                    	<li>click the format spinner
+	                        </li>
+	                        <li>slide your screen to the right and the panel will open 
+			                </li>
+	                        <li>After you select a formate, click Formater button
+			                </li>
+	                        <li>modify Prefix and format and click add button
+			                </li>
+	                        <li>click Rename button
+			                </li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-12">
+	                	<h4><span class="label  label-warning">Tip</span></h4>
+	                    <ul >
+	                    	<li>yyyy: year, MM: month, dd: day, hh : City, mm: minute, ss: second, SSS:milliseconds
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	
+	
+			    <!-- s1 Media Viewer -->
+			    <div class="section"  id="mediaviewer">
+	                <div class="col-lg-12">
+	                    <h2>Media Viewer</h2>
+	                    <hr>
+	                	<p>In Photo Viewer, you can show and manage a photo. It is started in full-screen mode. 
+	                		Touch the screen, or click the menu button and the ttile and  option menu will appear. 
+	                		In split menu mode, click the menu button again and show the Add Menu.</p>
+	                </div>
+	                
+	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                	<h4><span class="label  label-info">Process</span></h4>
+	                    <ul>
+	                        <li>slide show
+	                        </li>
+	                        <li>edit 
+	                        </li>
+	                        <li>rotate  
+	                        </li>
+	                        <li>delete  
+	                        </li>
+	                        <li>detail 
+	                        </li>
+	                        <li>share 
+	                        </li>
+	                        <li>set as 
+	                        </li>
+	                        <li>rename 
+	                        </li>
+	                        <li>crop 
+	                        </li>
+	                        <li>show on map 
+	                        </li>
+	                        <li>setting 
+	                        </li>
+	                    </ul>                       
+	                </div>
+	                
+	                <div class="col-lg-12">
+	                	<h3>Video Player and audio player</h3>
+	                	<p>They play video and audio. In <a href="#preferences">Settings</a> you can registere the external application </p>
+	                </div>                
+	                
+	                
+				</div>
+
+	
+	
+			    <!-- s1 Preferences -->
+			    <div class="section"  id="preferences">
+	
+	                <div class="col-lg-12">
+	                    <h2>Preferences</h2>
+	                    <hr>
+	                </div>
+	
+	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                	<h3>GeneralSettings</h3>
+	                	<p>you can change theme, menu type, panel type, thumbnail size, and category</p>
+	                    <ul class=>
+	                    	<li>Theme 
+	                        	<p>suported Bright, Dark, Dark only the action bar. the color theme will support for future</p>
+	                        </li>
+	                    	<li>Menu Type 
+	                        	<p>Three type is suproted. In options menu type, menus come up from the bottom.  
+	                        		and In the overflow menu type is provied the 3-point button on the top right. 
+	                        		In the a split menu type,  menu is displayed by bar on the floor.</p>
+	                        </li>
+	                    	<li>Panel Type 
+	                        	<p>Sliding panel type and drawer toggle type. In sliding panel type,  
+	                        		the panel is located on the background of the screen and opened by sliding. 
+	                        		In the drawer toggle type,  located on the left side of the screen and appear 
+	                        		if you push left end or touch the toggle .</p>
+	                        </li>
+	                    	<li>Thumbnail size 
+	                        	<p>the size of the thumbnail is changed by big, medium, small </p>
+	                        </li>
+	                    	<li>category 
+	                        	<p>you can hide some of the categories. You show only  the selected category.</p>
+	                        </li>
+	                    </ul>
+	                </div>
+	
+	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                	<h3>Gallery setting</h3>
+	                	<p>you can change theme, menu type, panel type, thumbnail size, and category</p>
+	                    <ul class=>
+	                    	<li>Slide transition effect: 
+	                        	<p>left-right, depth paging and  reduction</p>
+	                        </li>
+	                    	<li>Slide show interval
+	                        	<p>when a slideshow run, Set the inteval.</p>
+	                        </li>
+	                    	<li>slideshow Repeat 
+	                        	<p>Sets whether the slide show to repeat endlessly</p>
+	                        </li>
+	                    	<li>AudioVisual 
+	                        	<p>In the audio player, set the type of visual </p>
+	                        </li>
+	                    	<li>register audio player 
+	                        	<p>you can register external audio player</p>
+	                        </li>
+	                    	<li>register video  player 
+	                        	<p>you can register external video  player</p>
+	                        </li>
+	                    </ul>
+	                </div>
+	
+	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                	<h3>lock  setting</h3>
+	                	<p>set a password forto manage and backup media to restore the lock.</p>
+	                    <ul class=>
+	                    	<li>using lock:: 
+	                        	<p>You can not use a password if checked</p>
+	                        </li>
+	                    	<li>Change Password
+	                        	<p>You can change the password and lock type.</p>
+	                        </li>
+	                    	<li>extra Password 
+	                        	<p>prepare to forgot your password,  you can register a password additionally (optional)</p>
+	                        </li>
+	                    	<li>password hint 
+	                        	<p>set password hint.</p>
+	                        </li>
+	                    	<li>confirm only once
+	                        	<p> Until this app is run, it will confirm your password once</p>
+	                        </li>
+	                    	<li>backup 
+	                        	<p>compress-backup your setting information and locked  media</p>
+	                        </li>
+	                    	<li>Restore 
+	                        	<p>Restore the backup files at other devices.</p>
+	                        </li>
+	                    </ul>
+	                </div>
+	
+	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                	<h3>information</h3>
+	                	<p>referral, assessment, feedback</p>
+	                    <ul >
+	                    	<li>recommendations 
+	                        	<p>Please recommend this app to your friends</p>
+	                        </li>
+	                    	<li>feedback
+	                        	<p>send your comments to the developers</p>
+	                        </li>
+	                    	<li>Rating  
+	                        	<p>please rate us in the google play.</p>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            
+
+        	</div>
+
+            <div class="col-md-3 col-sm-4">
+            	<div class="sidebar ">
+
+	                <ul class="nav  affix">
+	                    <li ><a href="#configuration">Configuration of Media Gallery</a></li>
+	                    <li ><a href="#albumview">Album View</a>
+						</li>
+	                    <li ><a href="#galleryview">Gallery View</a>
+	                    </li>
+
+	            	    <li ><a href="#pastemedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste media</a></li>
+	                    <li ><a href="#lockmedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lock media</a></li>
+	                    <li ><a href="#renamemedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename media"</a></li>
+
+	
+	                    <li ><a href="#meidaviewer">Media Viewer</a></li>
+	            	    <li ><a href="#photoviewer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Photo viewer</a></li>
+	                    <li ><a href="#audioviewer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video / Audio Player</a></li>
+	
+	                    <li ><a href="#preferences">Preferences</a></li>
+	                    
+	            	    <li ><a href="#generalsettings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General Settings</a></li>
+	                    <li ><a href="#gallerysettings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery setting</a></li>
+	                    <li ><a href="#locksettings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lock settings</a></li>
+	                    <li ><a href="#infomation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information</a></li>
+	
+	                </ul>
+                </div>
+        	</div>
+        	
+        	
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+    <!-- s1 pre footer -->
+    <div class="container">
+
+        <div class="row well">
+            <div class="col-lg-8 col-md-8">
+                <h4>Meida Gallery</h4>
+                <p>If it is difficult to manage photos, You can organize your photos easily by Media Gallery!</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <a class="btn btn-lg btn-primary pull-right" href="http://startbootstrap.com">
+                	<img class="img-responsive" src="../img/android_market_logo.png"></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- s1 footer -->
+    <div class="container">
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2013 Infinite. All rights reserved. Site Develped &amp; Maintained by Enjoytimedev.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/media-gallery.js"></script>
+
+</body>
+
+</html>

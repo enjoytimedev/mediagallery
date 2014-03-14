@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Media Gallery - Android App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="../css/media-gallery.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+    <!-- s1 navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand" href="index.html">Media Gallery</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tutorial_album_view.html">Album View</a>
+                            </li>
+                            <li><a href="tutorial_media_view.html">Media View</a>
+                            </li>
+                            <li><a href="tutorial_photo_view.html">Photo View</a>
+                            </li>
+                            <li><a href="tutorial_lock_view.html">Media Lock</a>
+                            </li>
+                            <li><a href="tutorial_setting.html">Setting</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+
+    <!-- s1 intro -->
+
+    <div class="container">
+    	
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Media View<small>For Managing your Medias</small></h1>
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li class="active">Media View</li>
+                </ol>
+            </div>
+        </div>       
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Media view is a screen that can view the list of media for each album.</p>
+                <hr>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+
+    <!-- /.section-colored -->
+
+    <!-- s1 portfolio -->
+    <div class="section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Display on the Media View</h2>
+                    <hr>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="../img/album_view_framed.png">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="../img/album_view_lock_framed.png">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>The Album is a list of media types from a particular folder in the system.</p>
+                    <p>slide the screen to the right and panel view will open. you can navigate easily.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+				<div class="bs-callout bs-callout-danger">
+				    <h4>Cross-browser compatibility</h4>
+			        <p>If you long press the media, it will switch to multi-select mode. 
+			        	You can work various operations - copy, move, or share etc.</p>
+				</div>
+			</div>
+        </div>
+
+    </div>
+
+
+    <!-- s1 reference -->
+    <div class="section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img class="img-responsive" src="../img/album_view_framed.png">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <h2>screen menu</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">play : play the viewer for the media.</li>
+                        <li class="list-group-item">view type : The format of the display is changed in the form of simple, detail and preview type.</li>
+                        <li class="list-group-item">merge(grouping) : You can bind your media by group.</li>
+                        <li class="list-group-item">sort : a list of the albums is sorted by name, date or path. In all the category it is applied overall.</li>
+                        <li class="list-group-item">setting : You can set a theme, menu-type, lock type.</li>
+                        <li class="list-group-item">finish : this App is exited.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img class="img-responsive" src="../img/album_view_framed.png">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <h2>album menu</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">multi-select : swich selected mode by long press one of medias. You can add your selection by clicking the different media.</li>
+                        <li class="list-group-item">paste more 
+                        	: In the selected mode, tap a album in the panel and you can move or copy the selected meidas.
+                        </li>
+                        <li class="list-group-item">share 
+                        	<p>You can share your medias with SNS or other applications.</p>
+                        </li>
+                        <li class="list-group-item">rename  
+                        	<p>You can rename selected albums.</p>
+                        </li>
+                        <li class="list-group-item">delete 
+                        	<p>You cna delete selected albums.</p>
+                        </li>
+                        <li class="list-group-item">select all
+                        	<p>You can select or unselect all.</p>
+                        </li>
+                        <li class="list-group-item">lock 
+                        	<p>hide and protect your medias.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->
+
+
+
+
+
+
+
+
+
+
+    <!-- s1 pre footer -->
+    <div class="container">
+
+        <div class="row well">
+            <div class="col-lg-8 col-md-8">
+                <h4>'Modern Business' is a ready-to-use, Bootstrap 3 updated, multi-purpose HTML theme!</h4>
+                <p>For more templates and more page options that you can integrate into this website template, visit Start Bootstrap!</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <a class="btn btn-lg btn-primary pull-right" href="http://startbootstrap.com">See More Templates!</a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- s1 footer -->
+    <div class="container">
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2013 Infinite. All rights reserved. Site Develped &amp; Maintained by Enjoytimedev.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/media-gallery.js"></script>
+
+</body>
+
+</html>
