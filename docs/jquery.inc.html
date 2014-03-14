@@ -1,0 +1,24 @@
+// jQuery inc PlugIn Usage 
+//  http://johannburkard.de/blog/programming/javascript/inc-a-super-tiny-client-side-include-javascript-jquery-plugin.html
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.inc-6.min.js"></script>
+
+<div class="inc:footer.html" ></div>
+
+<p class="inc:footer.html">This text will be replaced with
+	footer.html</p>
+
+<p class="small inc:footer.html inactive">This text will be replaced
+	with footer.html as well</p>
+
+<p class="inc:la%20la%20la.html">This text will be replaced with
+	��la la la.html��</p>
+
+// Programatic includes
+
+<p onclick="$(this).inc('something.html');">Include something.</p>
+$('#bla').inc('bla.html', function(a) { return a.toLowerCase() });
+
+$('#bla').inc('bla.html', null, function() { alert('content is now
+live') });
