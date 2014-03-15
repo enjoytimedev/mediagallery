@@ -24,7 +24,7 @@
   
     <!-- s1 navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container hidden">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -33,17 +33,26 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                <a class="navbar-brand" href="index.html">Media Gallery</a>
+                <a class="navbar-brand" href="#">Media Gallery</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="tutorial.html">Tutorial</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="#albumview">Album View</a>
+                    </li>
+                    <li><a href="#galleryview">GalleryView</a>
+                    </li>
+                    <li><a href="#pastemedia">&nbsp;&nbsp;&nbsp;&nbsp;Paste</a>
+                    </li>
+                    <li><a href="#lockmedia">&nbsp;&nbsp;&nbsp;&nbsp;Lock</a>
+                    </li>
+                    <li><a href="#renamemedia">&nbsp;&nbsp;&nbsp;&nbsp;Rename</a>
+                    </li>
+                    <li><a href="#mediaviewer">MediaViewer</a>
+                    </li>
+                    <li><a href="#settings">Settings</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -479,14 +488,14 @@ function googleTranslateElementInit() {
 	
 	
 			    <!-- s1 Preferences -->
-			    <div class="section"  id="preferences">
+			    <div class="section"  id="settings">
 	
 	                <div class="col-lg-12">
-	                    <h2>Preferences</h2>
+	                    <h2>Settings</h2>
 	                    <hr>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                <div class="col-lg-9 col-md-9 col-sm-9" id="generalsettings">
 	                	<h3>GeneralSettings</h3>
 	                	<p>you can change theme, menu type, panel type, thumbnail size, and category</p>
 	                    <ul class=>
@@ -507,13 +516,10 @@ function googleTranslateElementInit() {
 	                    	<li>Thumbnail size 
 	                        	<p>the size of the thumbnail is changed by big, medium, small </p>
 	                        </li>
-	                    	<li>category 
-	                        	<p>you can hide some of the categories. You show only  the selected category.</p>
-	                        </li>
 	                    </ul>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                <div class="col-lg-9 col-md-9 col-sm-9" id="gallerysettings">
 	                	<h3>Gallery setting</h3>
 	                	<p>you can change theme, menu type, panel type, thumbnail size, and category</p>
 	                    <ul class=>
@@ -538,7 +544,23 @@ function googleTranslateElementInit() {
 	                    </ul>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                <div class="col-lg-9 col-md-9 col-sm-9" id="interactsettings">
+	                	<h3>Interact setting</h3>
+	                	<p>you can interact with the external own app.</p>
+	                    <ul class=>
+	                    	<li>Vedia Player 
+	                        	<p>Instead of built-in video player, register a external video player. You can play your video with it</p>
+	                        </li>
+	                    	<li>Audio Player
+	                        	<p>Instead of built-in audio player, register a external audio player. You can play your music with it</p>
+	                        </li>
+	                    	<li>Lock Apps 
+	                        	<p>Register a external Lock app. You can lock your media using menu in the app</p>
+	                        </li>
+	                    </ul>
+	                </div>
+	
+	                <div class="col-lg-9 col-md-9 col-sm-9" id="locksettings">
 	                	<h3>lock  setting</h3>
 	                	<p>set a password forto manage and backup media to restore the lock.</p>
 	                    <ul class=>
@@ -566,7 +588,7 @@ function googleTranslateElementInit() {
 	                    </ul>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9">
+	                <div class="col-lg-9 col-md-9 col-sm-9" id="infosettings">
 	                	<h3>information</h3>
 	                	<p>referral, assessment, feedback</p>
 	                    <ul >
@@ -604,16 +626,16 @@ function googleTranslateElementInit() {
 	                    <li ><a href="#renamemedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename media"</a></li>
 
 	
-	                    <li ><a href="#meidaviewer">Media Viewer</a></li>
+	                    <li ><a href="#mediaviewer">Media Viewer</a></li>
 	            	    <li ><a href="#photoviewer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Photo viewer</a></li>
 	                    <li ><a href="#audioviewer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video / Audio Player</a></li>
 	
-	                    <li ><a href="#preferences">Preferences</a></li>
+	                    <li ><a href="#settings">Settings</a></li>
 	                    
 	            	    <li ><a href="#generalsettings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General Settings</a></li>
 	                    <li ><a href="#gallerysettings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery setting</a></li>
 	                    <li ><a href="#locksettings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lock settings</a></li>
-	                    <li ><a href="#infomation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information</a></li>
+	                    <li ><a href="#infosettings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information</a></li>
 	
 	                </ul>
                 </div>
@@ -650,7 +672,7 @@ function googleTranslateElementInit() {
                 <p>If it is difficult to manage photos, You can organize your photos easily by Media Gallery!</p>
             </div>
             <div class="col-lg-4 col-md-4">
-                <a class="btn btn-lg btn-primary pull-right" href="https://play.google.com/store/apps/details?id=com.infinite.mediagallery.lite">
+                <a class="btn btn-lg btn-primary pull-right" href="http://startbootstrap.com">
                 	<img class="img-responsive" src="../img/android_market_logo.png"></a>
             </div>
         </div>
