@@ -2,135 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    <meta name="description" content=""></meta>
-    <meta name="author" content=""></meta>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="media, gallery, lock, photo, android, app">
     <title>Media Gallery - Android App</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet" />
 
     <!-- Add custom CSS here -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/media-gallery.css" rel="stylesheet" /> 
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-		
+
+    <script type="text/javascript">
+      window['ga-disable-UA-45209080-2'] = true;
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-45209080-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>		
+
     <meta name="google-translate-customization" content="7f937a720fc85daf-a7c240589df371ce-g64de7bda6373e0bb-24"></meta>
 
 </head>
 
 
-<body>
-  
+<body data-spy="scroll" >
+  <a class="sr-only" href="#content"></a>
     <!-- s1 navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" id="top"  role="banner">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                <a class="navbar-brand" href="#">Media Gallery</a>
+                <a href="#" class="navbar-brand">Media Gallery</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#albumview">Album View</a>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="#albumview" >Album View</a>
                     </li>
-                    <li><a href="#galleryview">GalleryView</a>
+                    <li><a href="#galleryview" target="_self">GalleryView</a>
                     </li>
-                    <li><a href="#pastemedia">&nbsp;&nbsp;&nbsp;&nbsp;Paste</a>
+                    <li><a href="#pastemedia" target="_self">Paste</a>
                     </li>
-                    <li><a href="#lockmedia">&nbsp;&nbsp;&nbsp;&nbsp;Lock</a>
+                    <li><a href="#lockmedia">Lock</a>
                     </li>
-                    <li><a href="#renamemedia">&nbsp;&nbsp;&nbsp;&nbsp;Rename</a>
+                    <li><a href="#renamemedia">Rename</a>
                     </li>
                     <li><a href="#mediaviewer">MediaViewer</a>
                     </li>
                     <li><a href="#settings">Settings</a>
                     </li>
                 </ul>
-            </div>
+
+            </nav>
+
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </header>
 
-<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <div class="container">
+    <div class="container" role="main">
         <div class="row">
-        	
-            <div class="col-md-9 col-sm-8">
-        	
-        	    <div class="col-lg-12" id="top">
-	                <h1 class="page-header">Tutorial <small>For Media Gallery</small></h1>
-	                <ol class="breadcrumb">
-	                    <li><a href="../index.html">Home</a></li>
-	                    <li class="active">Tutorial</li>
-	                </ol>
-	            </div>
+       
+            <div class="col-lg-9 col-md-8 ">
+                
+                     <div class="row" id="content">
+                        <h1 class="page-header">Tutorial <small>For Media Gallery</small></h1>
+                        <ol class="breadcrumb">
+                            <li><a href="../index.html">Home</a></li>
+                            <li class="active">Tutorial</li>
+                        </ol>
+                    </div>
+
 	            
 			    <!-- s1 mediagallery -->
-			    <div class="section" id="mediagallery">
-	
-	                <h2>Media Gallery, why have we?</h2>
-	                <hr>
-	                <p>Many pictures have been stored in your [Camera] folder so it is difficult to find it later. 
-	                	It is classified by place, time, face detectiotn, but you may not up ot expectiation. 
-	                	Tags exists but you could not tag. You want to organize by folde, but you wander here 
-	                	and there from a menu to other menu.Eventually your sprite’s been confued</p>
-	                <p>A smartphone is smart about view and search,  but isn’t about management.</p>
-		            <div class="row bs-callout bs-callout-warning">
-					    <h4>Innovation of Photo Gallery </h4>
-				        <p>Media Gallery is revolutionary in this regard Gallery app. Media Gallerys make you 
-				        	to systematically manage your photos without switching of screen and choice of menu. 
-				        	Select the photos and choice the album. So, Your photo will be organized. </p>
-					</div>
-		        	<p>In a lite version, some features are limited. </p>
-		        	
-				</div>
-					
-					
-			    <!-- s1 Configuration -->
-                <div  class="section row " id="configuration">
-                    <h2>Configuration of Media Gallery</h2>
-                    <hr>
-                    
-                    <p>Media Gallery consists of  <a href="#albumview">Album View</a>, <a href="#galleryview">Gallery View</a>, 
-                    	<a href="#photoviewer">Photo Viewer</a>, <a href="#audioview"></a>Video Viewer</a>, 
-                    	<a href="#audioviewr">Audio Player</a>. 
-	                    Gallery view has the album panel and you can navigate between albums free and copy / move your 
-	                    media intuitively</p>
-                    <p>A smartphone is smart about view and search,  but isn’t about management.</p>
-                    <br/>
-                    
-					<div class="well">
-				        <p>For providing lock function, it is worry. The purpose of the gallery is to show, but Lock is to hide. 
-				        They conflict cross-functionally. But if it is privied by other App, convenience of it is bad. 
-				        Further, since it is a matter of how to manage, we decided to include a lock function. </p>
-					</div>
-					
-                </div>					
+			    <div class="section"  id="mediagallery">
+                    <div class="col-lg-12" >
+
+                        <h2 class="page-header" >why is Media Gallery?</h2>
+                        
+                        <p>Many pictures have been stored in your [Camera] folder so it is difficult to find it later. 
+                            It is classified by place, time, face detectiotn, but you may not up ot expectiation. 
+                            Tags exists but you could not tag. You want to organize by folde, but you wander here 
+                            and there from a menu to other menu.Eventually your sprite’s been confued</p>
+                        <p>A smartphone is smart about view and search,  but isn’t about management.</p>
+                        <div class="row bs-callout bs-callout-warning">
+                            <h4>Innovation of Photo Gallery </h4>
+                            <p>Media Gallery is revolutionary in this regard Gallery app. Media Gallerys make you 
+                                to systematically manage your photos without switching of screen and choice of menu. 
+                                Select the photos and choice the album. So, Your photo will be organized. </p>
+                        </div>
+                        <p>In a lite version, some features are limited. </p>
+
+                    </div>
+
+
+                    <!-- s1 Configuration -->
+                    <div  class="col-lg-12" >
+                        <h2  class="page-header" >Configuration of Media Gallery</h2>
+
+                        <p>Media Gallery consists of  <a href="#albumview">Album View</a>, <a href="#galleryview">Gallery View</a>, 
+                            <a href="#photoviewer">Photo Viewer</a>, <a href="#audioview"></a>Video Viewer</a>, 
+                            <a href="#audioviewr">Audio Player</a>. 
+                            Gallery view has the album panel and you can navigate between albums free and copy / move your 
+                            media intuitively</p>
+                        <p>A smartphone is smart about view and search,  but isn’t about management.</p>
+                        <br/>
+
+                        <div class="well">
+                            <p>For providing lock function, it is worry. The purpose of the gallery is to show, but Lock is to hide. 
+                            They conflict cross-functionally. But if it is privied by other App, convenience of it is bad. 
+                            Further, since it is a matter of how to manage, we decided to include a lock function. </p>
+                        </div>
+
+                    </div>	
+                </div>
 					
 			    <!-- s1 Album View -->
-			    <div class="section row "  id="albumview">
-					<div class="row">
-		                <div class="col-lg-9 col-md-9 col-sm-9">
-		                    <h2>Album view</h2>
-		                    <hr>
+			    <div class="section"  id="albumview">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+		                    <h2 class="page-header" >Album view</h2>
+		                    
 		                    <p>Album View is the view for managing your album and foler.</p>
 		                    <p>If you fling left and right, you can move between the categories. Click an album and 
 		                    	it will go to the gallery.  And album menu will appear if long-press.</p>
+		                <div class="col-lg-9 col-md-8 col-sm-6">
 	                    <h4><span class="label label-info">Option menu</span></h4>
 	                    <ul>
 	                        <li>new album
@@ -155,11 +167,11 @@ function googleTranslateElementInit() {
 	                        </li>
 	                    </ul>                       
 		                </div>
-		               	<div class="col-lg-3 col-md-3 col-sm-3">
+		               	<div class="col-lg-3 col-md-4 col-sm-6">
 		                    <img class="img-responsive" src="../img/album_view_framed.png">
 		                </div>
 	                </div>
-	                <div class="col-lg-12 ">
+	                <div class="col-lg-12 col-md-12 col-sm-12">
 	                    <h4><span class="label label-success">Album menu</span></h4>
 	                    <ul>
 	                        <li>Rename
@@ -171,7 +183,7 @@ function googleTranslateElementInit() {
 	                        		And if the  folder is empty, the folder will also be deleted</p>
 	                        </li>
 	                    </ul>                       
-	                    <div class="well">
+	                    <div class="alert alert-info">
 	                    	<b>remove Ad</b>
 	                    	<p >You can downgrade.  the media to lock is limited to 50. 
 	                    		This feature will be gone emoved in the future, but you can use it</p>
@@ -182,32 +194,33 @@ function googleTranslateElementInit() {
 	
 
 			    <!-- s1 Gallery View -->
-			    <div class="section"  id="galleryview">
-						  <div class="row">
-		              <div class="col-lg-9 col-md-9 col-sm-9">
-		                    <h2>Gallery view</h2>
-		                    <hr>
-		                    <p>Gallery View is the view for retreaving and managing your media. </p>
-		                    <p>slide to the right and album panel will appear. You can select the category and album,  
-		                    	and go to it freely. If you long press a media,  the multi-media selection mode become.</p>
-		                    <p>In a drawer toggle mode, slide the left end of the screen, or touch the toggle in top, 
-		                    	album panel opens.</p>
-	                    <ul clase="list-group">
-	                    	<li >multi-select 
-	                        	<p>swich selected mode by long press one of medias. 
-	                        		You can add your selection by clicking the different media</p>
-	                        </li>
-	                    	<li ><a href="#pastemedia">Copy/ Move</a> 
-	                        	<p>In the selected mode, tap a album in the panel and you can move or copy the selected </p>
-	                        </li>
-	                    </ul>
+			    <div class="section"  >
+					<div class="col-lg-12  col-md-12 col-sm-12">
+                        <h1 id="galleryview" class="page-header">Gallery view</h1>
+                        
+                        <p>Gallery View is the view for retreaving and managing your media. </p>
+                        <p>slide to the right and album panel will appear. You can select the category and album,  
+                            and go to it freely. If you long press a media,  the multi-media selection mode become.</p>
+                        <p>In a drawer toggle mode, slide the left end of the screen, or touch the toggle in top, 
+                            album panel opens.</p>
+		              <div class="col-lg-9 col-md-8 col-sm-6">
+                            <ul clase="list-unstyled">
+                                <li >multi-select 
+                                    <p>swich selected mode by long press one of medias. 
+                                        You can add your selection by clicking the different media</p>
+                                </li>
+                                <li ><a href="#pastemedia">Copy/ Move</a> 
+                                    <p>In the selected mode, tap a album in the panel and you can move or copy the selected </p>
+                                </li>
+                            </ul>
 	                    
 		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-3">
+		                <div class="col-lg-3 col-md-4 col-sm-6">
 		                    <img class="img-responsive" src="../img/album_view_framed.png">
 		                </div>
 	                </div>
-	                <div class="col-lg-12">
+                    
+	                <div class="col-lg-12  col-md-12 col-sm-12 ">
 	                    <h4><span class="label label-info">Option menu</span></h4>
 	                    <ul >
 	                        <li>Play
@@ -250,208 +263,214 @@ function googleTranslateElementInit() {
 	                        </li>
 	                    </ul>                       
 	                </div>
+
 	            </div>
 
-	
+ 
                     <!-- s1 Paset media -->
-		    <div class="section"  id="pastemedia">
-	
-	                <div class="col-lg-12">
-	                    <h3>Paste media</h3>
-	                    <hr>
-	                    <p></p>
-	                </div>
-	                <div class="col-lg-12">
-	                    <h4><span class="label  label-info">Process</span></h4>
-	                    <ol >
-	                    	<li>long press one of medias
-	                        </li>
-	                    	<li>Add your selection by clicking the different media
-	                        </li>
-	                        <li>slide your screen to the right and the panel will open 
-			        </li>
-	                        <li>tap the album to paste
-			        </li>
-	                        <li>choose  move or copy in dialog
-			        </li>
-	                    </ol>
-	                </div>
-	                <div class="col-lg-12">
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/paste_album_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/paste_open_panel_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/paste_tap_album_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/paste_tap_move_framed.png">
-		                </div>
-	                </div>
-	                <div class="col-lg-12 col-md-12 col-sm-12">
-		                <div class="row bs-callout bs-callout-warning">
-		                	<h4 ><span class="label  label-warning">Tip</span></h4>
-		                    <ul >
-		                    	<li>Until completed, please do not exit the application
-		                        </li>
-		                    	<li>takes a long time to copy a video file
-		                        </li>
-		                        <li>Please do not copy files at once too many. 
-		                        	The mobile device may may be interrupted  
-		                        	due to the insufficient power supply or lack of memory 
-				                </li>
-		                    </ul>
-		                </div>
-	                </div>
-	            </div>
-				
-			    <!-- s1 lock media -->
-			    <div class="section"  id="lockmedia">
-	
-	                <div class="col-lg-12">
-	                    <h3>lock media</h3>
-	                    <hr>
-	                    <p></p>
-	                </div>
-	                
-	                <div class="col-lg-12 col-md-12 col-sm-12">
-	                	<h4><span class="label  label-info">Process</span></h4>
-	                    <ul class="list-unstyled">
-	                    	<li>using the panel
-			                    <ol >
-			                    	<li>select media
-			                        </li>
-			                    	<li>open the panel by sliding to right
-			                        </li>
-			                    	<li>select the lock category. if password window shows, input your password
-			                        </li>
-			                        <li>tap the album for locking 
-					                </li>
-			                    </ol>
-	                        </li>
-	                        <li>using menu 
-			                    <ol>
-			                    	<li>select media
-			                        </li>
-			                        <li>in more menu, select the lock menu and lock album dialog will show
-			                        </li>
-			                    	<li>select the new album, in-same-name, or one of existed albums
-			                        </li>
-			                    </ol>
-			                </li>
-	                    </ul>
-	                </div>
-	                
-	                <div class="col-lg-12">
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/lock_menu_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/lock_media_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/lock_album_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/lock_pattern.png">
-		                </div>
-	                </div>
-	                
-	                <div class="col-lg-12">
-	                	<h4><span class="label  label-warning">Tip</span></h4>
-	                    <ul >
-	                    	<li>Until completed, please do not exit the application
-	                        </li>
-	                    	<li>Untill Lock / Unlock is completed, please do not exit the application 
-	                        </li>
-	                        <li>Please do not copy files at once too many. 
-	                        	The mobile device may may be interrupted  
-	                        	due to the insufficient power supply or lack of memory 
-			                </li>
-	                    </ul>
-	                </div>
-	                
-	                <div class="col-lg-12">
-	                	<h4><span class="label  label-warning"></span></h4>
-	                    <ul >
-	                    	<li>you can change your password in settings
-	                        </li>
-	                    	<li>backupand restore: If you can backup preferece info and locked media. 
-	                    		To restore it in your other device,  transite it directly by removalbe 
-	                    		SD card or other way.  and preform to restore.
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>					
+			     <div class="section"  >
+				    <div class="col-lg-12   col-md-12 col-sm-12  " >
+                        <div class="panel panel-primary"  >
+                            <div class="panel-heading">
+                                <h3 class="panel-title"  id="pastemedia" >Paste media</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h4><span class="label  label-info">Process</span></h4>
+                                <ol >
+                                    <li>long press one of medias
+                                    </li>
+                                    <li>Add your selection by clicking the different media
+                                    </li>
+                                    <li>slide your screen to the right and the panel will open 
+                                    </li>
+                                    <li>tap the album to paste
+                                    </li>
+                                    <li>choose  move or copy in dialog
+                                    </li>
+                                </ol>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/paste_album_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/paste_open_panel_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/paste_tap_album_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/paste_tap_move_framed.png">
+                                    </div>
+                                </div>
+                                
+                                <h4 ><span class="label  label-warning">Tip</span></h4>
+                                <ul >
+                                    <li>Until completed, please do not exit the application
+                                    </li>
+                                    <li>takes a long time to copy a video file
+                                    </li>
+                                    <li>Please do not copy files at once too many. 
+                                        The mobile device may may be interrupted  
+                                        due to the insufficient power supply or lack of memory 
+                                    </li>
+                                </ul>
+                                
+                            </div>
 
-			
-			    <!-- s1 Rename media -->
-			    <div class="section"  id="renamemedia">
-	
-	                <div class="col-lg-12">
-	                    <h3>Rename media</h3>
-	                    <hr>
-	                    <p>There are ditect-renaming and format-renaming. if multi-selected, 
-	                    	only format-renaming are possible. If necessary, you can reuse 
-	                    	by registering the format of their own</p>
-	                </div>
-	                
-	                <div class="col-lg-12">
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/rename_dialog_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/rename_format_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/rename_format2_framed.png">
-		                </div>
-		                <div class="col-lg-3 col-md-3 col-sm-6">
-		                    <img class="img-responsive" src="../img/rename_format3_framed.png">
-		                </div>
-	                </div>
-	                
-	                <div class="col-lg-12 col-md-12 col-sm-12">
-	                	<h4><span class="label  label-info">Process</span></h4>
-	                    <ul >
-	                    	<li>select rename menu in the selected mode
-	                        </li>
-	                    	<li>click the format spinner
-	                        </li>
-	                        <li>slide your screen to the right and the panel will open 
-			                </li>
-	                        <li>After you select a formate, click Formater button
-			                </li>
-	                        <li>modify Prefix and format and click add button
-			                </li>
-	                        <li>click Rename button
-			                </li>
-	                    </ul>
-	                </div>
-	                <div class="col-lg-12">
-	                	<h4><span class="label  label-warning">Tip</span></h4>
-	                    <ul >
-	                    	<li>yyyy: year, MM: month, dd: day, hh : City, mm: minute, ss: second, SSS:milliseconds
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	
-	
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- s1 lock media -->
+			   <div class="section" >
+ 				    <div class="col-lg-12   col-md-12 col-sm-12  " >
+                       <div class="panel panel-primary" >
+
+                            <div class="panel-heading" >
+                                <h3 class="panel-title" id="lockmedia" >lock media</h3>
+                            </div>
+
+                            <div class="panel-body">
+                                <h4><span class="label  label-info">Process</span></h4>
+                                <ul >
+                                    <li>using the panel
+                                        <ol >
+                                            <li>select media
+                                            </li>
+                                            <li>open the panel by sliding to right
+                                            </li>
+                                            <li>select the lock category. if password window shows, input your password
+                                            </li>
+                                            <li>tap the album for locking 
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>using menu 
+                                        <ol>
+                                            <li>select media
+                                            </li>
+                                            <li>in more menu, select the lock menu and lock album dialog will show
+                                            </li>
+                                            <li>select the new album, in-same-name, or one of existed albums
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/lock_menu_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/lock_media_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/lock_album_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/lock_pattern.png">
+                                    </div>
+                                </div>
+
+                                <h4><span class="label  label-warning">Tip</span></h4>
+                                <ul >
+                                    <li>Until completed, please do not exit the application
+                                    </li>
+                                    <li>Untill Lock / Unlock is completed, please do not exit the application 
+                                    </li>
+                                    <li>Please do not copy files at once too many. 
+                                        The mobile device may may be interrupted  
+                                        due to the insufficient power supply or lack of memory 
+                                    </li>
+                                </ul>
+                               <br/>
+                                <div class="alert alert-info">
+                                    <h4><a  href="#locksettings">Lock Setting</a></h4>
+                                    <ul >
+                                        <li>you can change your password in settings
+                                        </li>
+                                        <li>backupand restore: If you can backup preferece info and locked media. 
+                                            To restore it in your other device,  transite it directly by removalbe 
+                                            SD card or other way.  and preform to restore.
+                                        </li>
+                                    </ul>
+                               </div>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+
+
+                    <!-- s1 Rename media -->
+			     <div class="section"  >
+				    <div class="col-lg-12   col-md-12 col-sm-12  " >
+                        <div class="panel panel-primary" >
+
+                            <div class="panel-heading">
+                                <h3  class="panel-title" id="renamemedia">Rename media</h3>
+                            </div>
+
+                            <div class="panel-body">
+                                <p>There are ditect-renaming and format-renaming. if multi-selected, 
+                                    only format-renaming are possible. If necessary, you can reuse 
+                                    by registering the format of their own</p>
+
+                                <h4><span class="label  label-info">Process</span></h4>
+                                <ul >
+                                    <li>select rename menu in the selected mode
+                                    </li>
+                                    <li>click the format spinner
+                                    </li>
+                                    <li>slide your screen to the right and the panel will open 
+                                    </li>
+                                    <li>After you select a formate, click Formater button
+                                    </li>
+                                    <li>modify Prefix and format and click add button
+                                    </li>
+                                    <li>click Rename button
+                                    </li>
+                                </ul>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/rename_dialog_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/rename_format_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/rename_format2_framed.png">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                        <img class="img-responsive" src="../img/rename_format3_framed.png">
+                                    </div>
+                                </div>
+
+                                <div class="alert alert-info">
+                                    <h4><span class="label  label-warning">Info</span></h4>
+                                    <ul >
+                                        <li>yyyy: year, MM: month, dd: day, hh : City, mm: minute, ss: second, SSS:milliseconds
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+				</div>
+        
 			    <!-- s1 Media Viewer -->
-			    <div class="section"  id="mediaviewer">
-	                <div class="col-lg-12">
-	                    <h2>Media Viewer</h2>
-	                    <hr>
+			    <div class="section"  >
+	                <div class="col-lg-12  col-md-12 col-sm-12">
+	                    <h2 class="page-header" id="mediaviewer">Media Viewer</h2>
+	                    
 	                	<p>In Photo Viewer, you can show and manage a photo. It is started in full-screen mode. 
 	                		Touch the screen, or click the menu button and the ttile and  option menu will appear. 
 	                		In split menu mode, click the menu button again and show the Add Menu.</p>
 	                </div>
 	                
-	                <div class="col-lg-9 col-md-9 col-sm-9">
-	                	<h4><span class="label  label-info">Process</span></h4>
+	                <div class="col-lg-12   col-md-12 col-sm-12">
+	                	<h4><span class="label  label-info">Menu</span></h4>
 	                    <ul>
 	                        <li>slide show
 	                        </li>
@@ -478,9 +497,9 @@ function googleTranslateElementInit() {
 	                    </ul>                       
 	                </div>
 	                
-	                <div class="col-lg-12">
+	                <div class="col-lg-12   col-md-12 col-sm-12">
 	                	<h3>Video Player and audio player</h3>
-	                	<p>They play video and audio. In <a href="#preferences">Settings</a> you can registere the external application </p>
+	                	<p>They play video and audio. In <a href="#settings">Settings</a> you can registere the external application </p>
 	                </div>                
 	                
 	                
@@ -489,17 +508,19 @@ function googleTranslateElementInit() {
 	
 	
 			    <!-- s1 Preferences -->
-			    <div class="section"  id="settings">
+			    <div class="section"  >
 	
 	                <div class="col-lg-12">
-	                    <h2>Settings</h2>
+	                    <h2 id="settings">Settings</h2>
 	                    <hr>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9" id="generalsettings">
-	                	<h3>GeneralSettings</h3>
+	                <div class="col-lg-12 col-md-12 col-sm-12" >
+	                	<h3 id="generalsettings">GeneralSettings</h3>
 	                	<p>you can change theme, menu type, panel type, thumbnail size, and category</p>
-	                    <ul class=>
+                    </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9" >
+	                    <ul >
 	                    	<li>Theme 
 	                        	<p>suported Bright, Dark, Dark only the action bar. the color theme will support for future</p>
 	                        </li>
@@ -520,10 +541,12 @@ function googleTranslateElementInit() {
 	                    </ul>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9" id="gallerysettings">
-	                	<h3>Gallery setting</h3>
+	                <div class="col-lg-12 col-md-12 col-sm-12" >
+	                	<h3 id="gallerysettings">Gallery setting</h3>
 	                	<p>you can change theme, menu type, panel type, thumbnail size, and category</p>
-	                    <ul class=>
+                    </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9" id="generalsettings">
+	                    <ul >
 	                    	<li>Slide transition effect: 
 	                        	<p>left-right, depth paging and  reduction</p>
 	                        </li>
@@ -545,10 +568,12 @@ function googleTranslateElementInit() {
 	                    </ul>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9" id="interactsettings">
-	                	<h3>Interact setting</h3>
+	                <div class="col-lg-12 col-md-12 col-sm-12" >
+	                	<h3 id="interactsettings">Interact setting</h3>
 	                	<p>you can interact with the external own app.</p>
-	                    <ul class=>
+                    </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9" >
+	                    <ul >
 	                    	<li>Vedia Player 
 	                        	<p>Instead of built-in video player, register a external video player. You can play your video with it</p>
 	                        </li>
@@ -561,9 +586,11 @@ function googleTranslateElementInit() {
 	                    </ul>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9" id="locksettings">
-	                	<h3>lock  setting</h3>
+	                <div class="col-lg-12 col-md-12 col-sm-12" >
+	                	<h3  id="locksettings">lock  setting</h3>
 	                	<p>set a password forto manage and backup media to restore the lock.</p>
+                    </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9" >
 	                    <ul class=>
 	                    	<li>using lock:: 
 	                        	<p>You can not use a password if checked</p>
@@ -589,9 +616,11 @@ function googleTranslateElementInit() {
 	                    </ul>
 	                </div>
 	
-	                <div class="col-lg-9 col-md-9 col-sm-9" id="infosettings">
-	                	<h3>information</h3>
+	                <div class="col-lg-12 col-md-12 col-sm-12" >
+	                	<h3 id="infosettings" >information</h3>
 	                	<p>referral, assessment, feedback</p>
+                    </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9" >
 	                    <ul >
 	                    	<li>recommendations 
 	                        	<p>Please recommend this app to your friends</p>
@@ -610,21 +639,22 @@ function googleTranslateElementInit() {
         	</div>
 
 
-            <div class="col-md-3 col-sm-4">
+            <div class="col-lg-3 col-md-4" >
             
-            	<div class="sidebar ">
+            	<div class="sidebar" >
             	
 
-	                <ul class="nav  affix">
-	                    <li ><a href="#configuration">Configuration of Media Gallery</a></li>
+	                <ul class="nav  affix" data-spy="affix" data-offset-top="60">
+	                    <li ><a href="#mediagallery">Why is?</a></li>
 	                    <li ><a href="#albumview">Album View</a>
 									</li>
-	                    <li ><a href="#galleryview">Gallery View</a>
+                        <li class="divider"></li>
+ 	                    <li ><a href="#galleryview">Gallery View</a>
 	                    </li>
 
 	            	    <li ><a href="#pastemedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste media</a></li>
 	                    <li ><a href="#lockmedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lock media</a></li>
-	                    <li ><a href="#renamemedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename media"</a></li>
+	                    <li ><a href="#renamemedia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename media</a></li>
 
 	
 	                    <li ><a href="#mediaviewer">Media Viewer</a></li>
@@ -663,17 +693,19 @@ function googleTranslateElementInit() {
 
 
 
+
     <!-- s1 pre footer -->
     <div class="container">
 
         <div class="row well">
-            <div class="col-lg-8 col-md-8">
+            <div class="col-lg-9 col-md-9  col-sm-9">
                 <h4>Meida Gallery</h4>
                 <p>If it is difficult to manage photos, You can organize your photos easily by Media Gallery!</p>
             </div>
-            <div class="col-lg-4 col-md-4">
-                <a class="btn btn-lg btn-primary pull-right" href="http://startbootstrap.com">
+            <div class="col-lg-3 col-lg-3 col-md-3">
+                <a class="btn  btn-primary pull-right" href="http://startbootstrap.com">
                 	<img class="img-responsive" src="../img/android_market_logo.png"></a>
+
             </div>
         </div>
         <!-- /.row -->
@@ -687,9 +719,16 @@ function googleTranslateElementInit() {
         <hr>
 
         <footer>
+            
             <div class="row">
                 <div class="col-lg-12">
+                    <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     <p>Copyright &copy; 2013 Infinite. All rights reserved. Site Develped &amp; Maintained by Enjoytimedev.</p>
+                    
                 </div>
             </div>
         </footer>
@@ -700,7 +739,29 @@ function googleTranslateElementInit() {
     <!-- JavaScript -->
     <script src="../js/jquery-1.10.2.js"></script>
     <script src="../js/bootstrap.js"></script>
-    <script src="../js/media-gallery.js"></script>
+    <script src="../js/docs.min.js"></script>
+                                        
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+                                     
+<script>
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
 
 </body>
 
